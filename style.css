@@ -13,4 +13,5 @@ layout: style
 
 .navbar-default .nav li a{
     color: #000 !important;
+    font-weight: bolder;
 }
