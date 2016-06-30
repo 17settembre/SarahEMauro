@@ -10,3 +10,7 @@ layout: style
     font-family:"Harrington";
     src: url("fonts/harrington.ttf") /* TTF file for CSS3 browsers */
 }
+
+.navbar-default .nav li a{
+    color: #000 !important;
+}
