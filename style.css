@@ -12,10 +12,6 @@ layout: style
 }
 
 .navbar-default .nav li a{
-    color: #000 !important;
+    color: #FFF !important;
     font-weight: bolder !important;
-}
-
-.navbar-default.navbar-shrink {
-    background-color: #C6B7A4;
 }
