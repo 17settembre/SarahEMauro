@@ -6,7 +6,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script>
+    <!--<script src="{{ "/js/classie.js" | prepend: site.baseurl }}"></script> -->
     <script src="{{ "/js/cbpAnimatedHeader.js" | prepend: site.baseurl }}"></script>
 
     <!-- Contact Form JavaScript -->
@@ -18,12 +18,24 @@
     
     <script>
      $(document).ready(function(){
-      $("#img1").hover(function(){
-       $("#img1").attr('src', 'img/team/3.jpg');
-      });
-      $("#img2").hover(function(){
-       $("#img2").attr('src', 'img/team/4.jpg');
-      });
+      $("img")
+      $("#img1").on({
+         "mouseover" : function() {
+            this.src = 'img/team/3.jpg';
+          },
+          "mouseout" : function() {
+            this.src='img/team/1.jpg';
+          }
+        });
+        
+      $("#img2").on({
+ "mouseover" : function() {
+    this.src = 'img/team/4.jpg';
+  },
+  "mouseout" : function() {
+    this.src='img/team/2.jpg';
+  }
+
      });
     </script>
     
