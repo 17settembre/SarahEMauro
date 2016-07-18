@@ -4,11 +4,16 @@ layout: style
 
 @font-face {
     font-family:"Harrington";
-    src: url("fonts/harrington.eot") /* EOT file for IE */
+    src: url("fonts/harrington.eot") format('eot'), /* EOT file for IE */
+         url("fonts/harrington.ttf") format('truetype'),
+         url("fonts/harrington.otf") format('otf'),
+         url('fonts/harrington.woff') format('woff'), 
+       url('fonts/harrington.svg') format('svg');
+    
 }
-@font-face {
-    font-family:"Harrington";
-    src: url("fonts/harrington.ttf") /* TTF file for CSS3 browsers */
+
+.navbar-default .navbar-brand{
+    font-family: "Harrington", "Kaushan Script",Helvetica,Arial,cursive;
 }
 
 .navbar-default .nav li a{
