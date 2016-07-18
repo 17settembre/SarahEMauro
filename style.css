@@ -15,3 +15,9 @@ layout: style
     color: #FFF !important;
     font-weight: bolder !important;
 }
+
+.intro-heading {
+    
+    text-transform: none !important;
+    font-size:50px !important;
+}
